@@ -1,15 +1,15 @@
 # Relatório sobre Protocolos de Rede e Comunicação
-https://developer.mozilla.org/en-US/docs/Web/HTTP
-https://en.wikipedia.org/wiki/File_Transfer_Protocol
-https://www.ssl.com/faqs/what-is-ssl/
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+[HTTP - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP)  
+[File Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/File_Transfer_Protocol)  
+[O que é SSL? - SSL.com](https://www.ssl.com/faqs/what-is-ssl/)  
+[Códigos de Status HTTP - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)  
 
 ## 1. Protocolos de Rede e Comunicação
 
 ### 1.1 HTTP (Hypertext Transfer Protocol)
 
 **O que é:**  
-O HTTP é um protocolo de comunicação utilizado para a transferência de documentos hipermídia, como páginas HTML, na web. citeturn0search0
+O HTTP é um protocolo de comunicação utilizado para a transferência de documentos hipermídia, como páginas HTML, na web.
 
 **Para que serve:**  
 Permite a comunicação entre clientes (como navegadores web) e servidores, facilitando a troca de informações e a navegação na internet.
