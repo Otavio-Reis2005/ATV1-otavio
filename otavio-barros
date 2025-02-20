@@ -1,0 +1,122 @@
+# Relatório sobre Protocolos de Rede e Comunicação
+https://developer.mozilla.org/en-US/docs/Web/HTTP
+https://en.wikipedia.org/wiki/File_Transfer_Protocol
+https://www.ssl.com/faqs/what-is-ssl/
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+## 1. Protocolos de Rede e Comunicação
+
+### 1.1 HTTP (Hypertext Transfer Protocol)
+
+**O que é:**  
+O HTTP é um protocolo de comunicação utilizado para a transferência de documentos hipermídia, como páginas HTML, na web. citeturn0search0
+
+**Para que serve:**  
+Permite a comunicação entre clientes (como navegadores web) e servidores, facilitando a troca de informações e a navegação na internet.
+
+**Porta padrão:**  
+80
+
+### 1.2 HTTPS (Hypertext Transfer Protocol Secure)
+
+**O que é:**  
+O HTTPS é uma extensão do HTTP que adiciona uma camada de segurança utilizando protocolos como TLS/SSL. citeturn0search24
+
+**Para que serve:**  
+Garante que os dados transmitidos entre o cliente e o servidor sejam criptografados, assegurando a confidencialidade e integridade das informações.
+
+**Porta padrão:**  
+443
+
+### 1.3 WebSockets
+
+**O que é:**  
+WebSocket é um protocolo de comunicação que fornece canais de comunicação full-duplex sobre uma única conexão TCP.
+
+**Para que serve:**  
+Permite a comunicação interativa entre o navegador do usuário e o servidor, facilitando aplicações em tempo real, como chats e jogos online.
+
+**Porta padrão:**  
+80 para ws:// e 443 para wss://
+
+### 1.4 FTP (File Transfer Protocol)
+
+**O que é:**  
+O FTP é um protocolo padrão utilizado para a transferência de arquivos entre um cliente e um servidor em uma rede. citeturn0search26
+
+**Para que serve:**  
+Facilita o upload e download de arquivos, sendo amplamente utilizado para gerenciar arquivos em servidores web.
+
+**Porta padrão:**  
+21
+
+### 1.5 SSH (Secure Shell)
+
+**O que é:**  
+O SSH é um protocolo de rede que permite a operação de serviços de rede de forma segura sobre uma conexão insegura.
+
+**Para que serve:**  
+É comumente usado para acessar e gerenciar remotamente servidores, garantindo a segurança da comunicação através de criptografia.
+
+**Porta padrão:**  
+22
+
+### 1.6 SSL/TLS (Secure Sockets Layer / Transport Layer Security)
+
+**O que é:**  
+SSL e seu sucessor, TLS, são protocolos de criptografia que fornecem segurança nas comunicações pela internet.
+
+**Para que serve:**  
+Protegem a integridade e a privacidade dos dados transmitidos entre aplicativos e servidores, sendo amplamente utilizados em navegadores web para garantir conexões seguras.
+
+**Porta padrão:**  
+443 (quando usado com HTTP, formando o HTTPS)
+
+## 2. Arquitetura Cliente-Servidor
+
+**O que é:**  
+A arquitetura cliente-servidor é um modelo de design de rede onde os clientes solicitam recursos ou serviços e os servidores os fornecem.
+
+**Como funciona:**  
+- **Cliente:** Dispositivo ou aplicativo que inicia a comunicação, enviando requisições ao servidor.
+- **Servidor:** Máquina ou programa que processa as requisições dos clientes e retorna as respostas apropriadas.
+
+Esse modelo é fundamental para a estrutura da internet, permitindo a distribuição eficiente de recursos e serviços.
+
+## 3. Funcionamento do DNS e de Proxies
+
+### 3.1 DNS (Domain Name System)
+
+**O que é:**  
+O DNS é um sistema que traduz nomes de domínio legíveis por humanos (como www.exemplo.com) em endereços IP numéricos utilizados por computadores.
+
+**Como funciona:**  
+1. **Resolução de Nome:** Quando um usuário digita um URL, o navegador consulta um servidor DNS para obter o endereço IP correspondente.
+2. **Resposta:** O servidor DNS retorna o endereço IP, permitindo que o navegador estabeleça uma conexão com o servidor de destino.
+
+### 3.2 Proxies
+
+**O que é:**  
+Um proxy é um intermediário entre o cliente e o servidor, que pode filtrar, armazenar em cache ou modificar as requisições e respostas.
+
+**Para que serve:**  
+- **Segurança:** Protege a rede interna ao ocultar endereços IP e bloquear conteúdo malicioso.
+- **Cache:** Armazena respostas frequentes para reduzir a carga no servidor e melhorar o tempo de resposta.
+- **Controle de Acesso:** Restringe o acesso a determinados conteúdos ou sites com base em políticas organizacionais.
+
+## 4. Diferenças entre HTTP e HTTPS
+
+- **Segurança:** O HTTP não possui criptografia, enquanto o HTTPS utiliza SSL/TLS para criptografar a comunicação, garantindo confidencialidade e integridade dos dados.
+- **Porta Padrão:** HTTP utiliza a porta 80; HTTPS utiliza a porta 443.
+- **Uso de Certificados:** HTTPS requer a implementação de certificados digitais para autenticar a identidade do servidor.
+
+## 5. Principais Categorias de Códigos HTTP e Verbos de Requisição
+
+### 5.1 Categorias de Códigos HTTP
+
+- **2xx (Sucesso):** Indicam que a requisição foi bem-sucedida.
+  - *200 OK:* A requisição foi bem-sucedida.
+- **4xx (Erro do Cliente):** Indicam que houve um problema com a requisição do cliente.
+  - *404 Not Found:* O recurso solicitado não foi encontrado.
+- **5xx (Erro do Servidor):** Indicam que o servidor encontrou um erro ao processar a requisição.
+  - *500 Internal Server Error:* 
